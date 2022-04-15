@@ -32,7 +32,33 @@ also:
 sudo systemctl restart elasticsearch
 ----
 
+[[get-started]]
+== Beginning of work
 
+To start the service:
+
+----
+sudo systemctl start elasticsearch
+----
+
+To shutdown service:
+
+----
+sudo systemctl enable elasticsearch
+----
+
+also:
+
+----
+sudo systemctl restart elasticsearch
+sudo systemctl status elasticsearch
+----
+
+Content in document.
+
+image::status.jpg[]  
+
+Content in document
 
 [[upgrade]]
 == Upgrade
@@ -83,12 +109,8 @@ xref:docs/README.asciidoc[docs README].
 For contribution guidelines, see xref:CONTRIBUTING.md[CONTRIBUTING]. 
 
 [[questions]]
-== Questions? Problems? Suggestions?
+== Questions? 
 
-* To report a bug or request a feature, create a
-https://github.com/elastic/elasticsearch/issues/new/choose[GitHub Issue]. Please
-ensure someone else hasn't created an issue for the same topic.
+* To report a bug or request a feature
 
-* Need help using Elasticsearch? Reach out on the
-https://discuss.elastic.co[Elastic Forum] or https://ela.st/slack[Slack]. A
-fellow community member or Elastic engineer will be happy to help you out.
+* Need help using Elasticsearch? 
