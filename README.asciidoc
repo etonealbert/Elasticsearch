@@ -14,9 +14,24 @@ Elasticsearch to store, search, and manage data for:
 [[get-started]]
 == Beginning of work
 
+To start the service:
+
 ----
 sudo systemctl start elasticsearch
 ----
+
+To shutdown service:
+
+----
+sudo systemctl enable elasticsearch
+----
+
+also:
+
+----
+sudo systemctl restart elasticsearch
+----
+
 
 
 [[upgrade]]
