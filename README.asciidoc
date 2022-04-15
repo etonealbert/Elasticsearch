@@ -30,10 +30,21 @@ also:
 
 ----
 sudo systemctl restart elasticsearch
+sudo systemctl status elasticsearch
 ----
 
-[[get-started]]
-== Beginning of work
+Просмотр версии elasticsearch:
+
+----
+curl -XGET http://localhost:9200 
+----
+
+image::status.jpg[]  
+
+Общение с ElasticSearch у нас на сервере происходит через Linux-утилиту curl. Для просмотра всей информации о сервисе мы обращаемся к localhost:9200
+
+[[Просмотр базы данных]]
+== 
 
 To start the service:
 
@@ -41,24 +52,8 @@ To start the service:
 sudo systemctl start elasticsearch
 ----
 
-To shutdown service:
 
-----
-sudo systemctl enable elasticsearch
-----
 
-also:
-
-----
-sudo systemctl restart elasticsearch
-sudo systemctl status elasticsearch
-----
-
-Content in document.
-
-image::status.jpg[]  
-
-Content in document
 
 [[upgrade]]
 == Upgrade
