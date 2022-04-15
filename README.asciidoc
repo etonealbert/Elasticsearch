@@ -43,15 +43,32 @@ image::status.jpg[]
 
 Общение с ElasticSearch у нас на сервере происходит через Linux-утилиту curl. Для просмотра всей информации о сервисе мы обращаемся к localhost:9200
 
-[[Просмотр базы данных]]
-== 
 
-To start the service:
+
+[[Commands]]
+== Базовые команды для работы с БД:
+
+GET - взять данные из индекса(БД)
+POST - для добавления пакеты данных в БД и массовой индексации
+PUT - для записи данных в индекс(Базу Данных)
+DELETE - для удаления индекса(БД)/поля
+UPGRADE - для обновления поля
+
+
+[[JSON]]
+== Отправка JSON файла на сервер:
+
+Загрузка JSON файла с помощью команды wget, в файл file.json:
 
 ----
-sudo systemctl start elasticsearch
+wget -O file.json https://download.elastic.co/demos/kibana/gettingstarted/shakespeare_6.0.json
 ----
 
+Проиндексироватть(занести данные в БД эластика) можно с помощью команды _blunk
+
+----
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/shakespeare/doc/_bulk?pretty' --data-binary @shakespeare_6.0.json
+----
 
 
 
