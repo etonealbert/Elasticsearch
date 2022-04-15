@@ -10,25 +10,14 @@ Elasticsearch to store, search, and manage data for:
 * Application monitoring
 * Endpoint security
 
-\... and more!
-
-To learn more about Elasticsearch's features and capabilities, see our
-https://www.elastic.co/products/elasticsearch[product page].
 
 [[get-started]]
-== Get started
+== Beginning of work
 
-The simplest way to set up Elasticsearch is to create a managed deployment with
-https://www.elastic.co/cloud/as-a-service[Elasticsearch Service on Elastic
-Cloud].
+----
+sudo systemctl start elasticsearch
+----
 
-If you prefer to install and manage Elasticsearch yourself, you can download
-the latest version from 
-https://www.elastic.co/downloads/elasticsearch[elastic.co/downloads/elasticsearch].
-
-For more installation options, see the
-https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html[Elasticsearch installation
-documentation].
 
 [[upgrade]]
 == Upgrade
