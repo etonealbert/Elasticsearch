@@ -67,8 +67,10 @@ wget -O file.json https://download.elastic.co/demos/kibana/gettingstarted/shakes
 Проиндексироватть(занести данные в БД эластика) можно с помощью команды _blunk
 
 ----
-curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/shakespeare/doc/_bulk?pretty' --data-binary @shakespeare_6.0.json
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/file/doc/_bulk?pretty' --data-binary @file.json
 ----
+
+С помощью опции -H передается заголовок для индексации данных, говорит что данные будут приходить в формате x-ndjson (сжатый json). 
 
 
 
