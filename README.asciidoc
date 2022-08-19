@@ -75,6 +75,10 @@ curl 'localhost:9200/app/_mapping&pretty'
 
 image::field.jpg[]
 
+Команда удаления индекса(датафрейма) -XDELETE
+----
+curl -XDELETE 'http://localhost:9200/app?pretty' 
+----
 
 [[JSON]]
 == Отправка JSON файла на сервер:
