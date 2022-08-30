@@ -16,6 +16,7 @@ Elasticsearch to store, search, and manage data for:
 
 To start the service:
 
+
 ----
 sudo systemctl start elasticsearch
 ----
