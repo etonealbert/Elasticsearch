@@ -11,6 +11,7 @@ Elasticsearch to store, search, and manage data for:
 * Endpoint security
 
 
+
 [[get-started]]
 == Beginning of work
 
