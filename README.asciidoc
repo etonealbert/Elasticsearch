@@ -60,9 +60,14 @@ UPGRADE - для обновления поля +
 indices?v - указывает над чем нужно выполнить действие +
 pretty - параметр который влияет на отображение
 
+= Просмотр индексов (датасетов):
+
 ----
-curl 'localhost:9200/_cat/indices?v&pretty'
+curl 'localhost:9200/_cat/indices'
 ----
+(curl "http://localhost:9200/_cat/indices?v&pretty")
+
+
 
 Команда _mapping - индексы и их поля 
 
