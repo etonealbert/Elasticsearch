@@ -60,7 +60,7 @@ UPGRADE - для обновления поля +
 indices?v - указывает над чем нужно выполнить действие +
 pretty - параметр который влияет на отображение
 
- Просмотр индексов (датасетов):
+Просмотр индексов (датасетов):
 
 ----
 curl 'localhost:9200/_cat/indices'
@@ -78,6 +78,10 @@ curl 'localhost:9200/_mapping&pretty'
 ----
 curl 'localhost:9200/app/_mapping&pretty' 
 ----
+
+----
+curl 'localhost:9200/app/data/_mapping&pretty' 
+----
 Каждое поле описывается таким образом:
 
 image::field.jpg[]
@@ -90,10 +94,16 @@ curl -XDELETE 'http://localhost:9200/app?pretty'
 [[JSON]]
 == Отправка JSON файла на сервер (Легче делать через jsondump):
 
-Команда 
+Команда импоррта json в elastic
 
 ----
-elasticdump --input=GetGoods.json --output=http://localhost:9200/goods --type=_mappings 
+elasticdump --input=goods.json --output=http://localhost:9200/goods --type=data 
+----
+
+Команда экспорта json из elastic
+
+----
+elasticdump --input=http://localhost:9200/goods --output=goods.json --type=data 
 ----
 
 Загрузка JSON файла с помощью команды wget, в файл file.json:
