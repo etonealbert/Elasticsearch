@@ -73,11 +73,11 @@ curl 'localhost:9200/_cat/indices'
 Команда _mapping - индексы и их поля 
 
 ----
-curl 'localhost:9200/_mapping&pretty' 
+curl 'localhost:9200/_mapping?pretty' 
 ----
 только для датафрейма "app":
 ----
-curl 'localhost:9200/app/_mapping&pretty' 
+curl 'localhost:9200/app/_mapping?pretty' 
 ----
 
 ----
