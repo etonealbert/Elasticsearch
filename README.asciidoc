@@ -11,6 +11,7 @@ Elasticsearch to store, search, and manage data for:
 * Application monitoring
 * Endpoint security
 
+we
 
 
 [[get-started]]
