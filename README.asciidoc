@@ -14,6 +14,7 @@ Elasticsearch to store, search, and manage data for:
 
 
 
+
 [[get-started]]
 == Beginning of work
 
@@ -123,13 +124,15 @@ curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/file/doc/_bu
 С помощью опции -H передается заголовок для индексации данных, говорит что данные будут приходить в формате x-ndjson (сжатый json). 
 
 
-== Поиск данных
+= Поиск данных
 
-= Базовый поиск:
+== Базовый поиск:
 Вернет 10 первых сущностей
 ----
 curl -XGET 'localhost:9200/getgoods/doc/_search?size=10&pretty'
 ----
+
+
 
 [[upgrade]]
 == Upgrade
