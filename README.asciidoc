@@ -11,9 +11,34 @@ Elasticsearch to store, search, and manage data for:
 * Application monitoring
 * Endpoint security
 
+== Основные команды:
 
+10.3.21.123:9200 - сервер и порт эластика
+merged - индекс к которому мы обращаемся
 
+Вывести данные из elastic :
 
+----
+curl -XGET '10.3.21.123:9200/merged/doc/_search?size=1&pretty'
+----
+
+Вывести список индексов в elastic по которым осуществлять поиск:
+
+----
+curl '10.3.21.123:9200/_cat/indices'
+----
+
+Структура данных индекса:
+
+----
+curl -XGET '10.3.21.123:9200/merged/doc/_search?size=1&pretty'
+----
+
+Добавить данные:
+
+----
+curl -XGET '10.3.21.123:9200/merged/doc/_search?size=1&pretty'
+----
 
 [[get-started]]
 == Beginning of work
