@@ -6,6 +6,7 @@ Elasticsearch to store, search, and manage data for:
 
 
 
+
 * Logs
 * Metrics
 * A search backend
